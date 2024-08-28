@@ -162,7 +162,7 @@ header {
 section#Menu {
   background-color: black;
   color: white;
-  width: 100vw;
+  width: 100%;
   border-radius: 10px;
   margin-top: 5em;
   margin-bottom: 5em;
@@ -221,7 +221,7 @@ hr {
 .box8,
 .box9,
 .box10 {
-  width: 30vw;
+  width: 30%;
   height: 40%;
   padding: 10px;
   margin: 10px;
@@ -246,8 +246,9 @@ hr {
   display: flex;
   justify-content: space-between;
 }
-
-h6 {
+.stamp {
+}
+.rating h6 {
   font-size: small;
 }
 .star {
@@ -257,7 +258,7 @@ h6 {
 span {
   margin: 0;
   padding: 0;
-  display: inline-block;
+  display: inline;
 }
 footer {
   list-style: none;
@@ -270,7 +271,10 @@ footer {
 section#footer-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 10px));
-  gap: 3.5em;
+  gap: 3em;
+  justify-content: space-between;
+  width: 100%;
+  padding: px;
 }
 
 .footer-contents h3 {
@@ -285,6 +289,15 @@ section#footer-items {
   text-align: center;
   margin-top: 1em;
 }
+#content {
+  display: flex;
+  padding-left: 3%;
+  justify-content: space-evenly;
+}
+.footer-content {
+  text-align: left;
+  margin-left: 1em;
+}
 .footer-content h4 {
   color: white;
   margin-bottom: 1em;
@@ -294,12 +307,25 @@ section#footer-items {
   transition: all 0.4s ease;
 }
 .footer-content li a {
-  display: block;
   color: white;
-  font-size: small;
   font-weight: 400;
-  transition: all 0.4s ease;
+  /*transition: all 0.4s ease;*/
   text-decoration: none;
+}
+.footer-content1 {
+  text-align: left;
+  margin-left: 1em;
+}
+.footer-content1 h4 {
+  color: white;
+  margin-bottom: 1em;
+}
+.footer-content1 li a {
+  color: white;
+  font-weight: 400;
+  /*transition: all 0.4s ease;*/
+  text-decoration: underline;
+  display: inline;
 }
 .footer-contents p a {
   color: white;
@@ -307,14 +333,15 @@ section#footer-items {
   text-decoration: none;
   margin-bottom: 1em;
 }
-
+.sticker {
+  display: flex;
+  justify-content: space-between;
+}
 .icons a {
   color: white;
   transition: all 0.4s ease;
 }
-.icons p {
-  justify-content: space-evenly;
-  display: inline;
+.sticker p {
   color: white;
 }
 @media screen and(max-width:1057px) {
