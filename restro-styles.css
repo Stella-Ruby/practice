@@ -246,8 +246,7 @@ hr {
   display: flex;
   justify-content: space-between;
 }
-.stamp {
-}
+
 .rating h6 {
   font-size: small;
 }
@@ -270,11 +269,11 @@ footer {
 
 section#footer-items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 10px));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 10px));
   gap: 3em;
   justify-content: space-between;
   width: 100%;
-  padding: px;
+  padding: 2px;
 }
 
 .footer-contents h3 {
@@ -291,12 +290,11 @@ section#footer-items {
 }
 #content {
   display: flex;
-  padding-left: 3%;
-  justify-content: space-evenly;
+  margin-bottom: 2em;
 }
 .footer-content {
   text-align: left;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 .footer-content h4 {
   color: white;
@@ -314,7 +312,7 @@ section#footer-items {
 }
 .footer-content1 {
   text-align: left;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 .footer-content1 h4 {
   color: white;
