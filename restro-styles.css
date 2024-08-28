@@ -162,25 +162,27 @@ header {
 section#Menu {
   background-color: black;
   color: white;
-  width: 100%;
+  width: 100vw;
   border-radius: 10px;
   margin-top: 5em;
   margin-bottom: 5em;
   padding: 1px;
 }
-.next {
+.column {
   justify-content: space-between;
+  display: flex;
 }
 .box4 {
+  display: inline;
   width: 7em;
   text-align: center;
   border: 1px solid yellow;
   color: black;
-  background-color: yellow;
-  justify-content: space-between;
+  background-color: #ffd700;
   padding: 1px;
   height: 20px;
   font-weight: bold;
+  margin-left: 3em;
 }
 h2 {
   font-size: 3em;
@@ -204,10 +206,11 @@ h5 {
 }
 .menu_items img {
   width: 100%;
-  height: 50%;
+  height: 50vh;
   border-radius: 10px;
   text-align: center;
   align-items: center;
+  justify-content: center;
 }
 hr {
   width: 100%;
@@ -218,10 +221,10 @@ hr {
 .box8,
 .box9,
 .box10 {
-  width: 30%;
+  width: 30vw;
   height: 40%;
-  padding: 20px;
-  margin: 17px;
+  padding: 10px;
+  margin: 10px;
   border-radius: 15px;
   background-color: black;
   text-align: center;
@@ -313,6 +316,25 @@ section#footer-items {
   justify-content: space-evenly;
   display: inline;
   color: white;
+}
+@media screen and(max-width:1057px) {
+  .box5,
+  .box6,
+  .box7,
+  .box8,
+  .box9,
+  .box10 {
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #hero {
+    width: 100vw;
+    height: 100%;
+  }
 }
 
 /* * {
