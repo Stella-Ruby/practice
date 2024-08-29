@@ -143,10 +143,7 @@ header {
 }
 .text hr {
   color: #000;
-  width: 80%;
-  margin-left: 100px;
-  margin-right: 10px;
-  margin-top: 10px;
+  width: 100%;
 }
 .line {
   font-size: larger;
@@ -206,7 +203,7 @@ h5 {
 }
 .menu_items img {
   width: 100%;
-  height: 50vh;
+  height: 50%;
   border-radius: 10px;
   text-align: center;
   align-items: center;
@@ -346,7 +343,141 @@ section#footer-items {
 .sticker p {
   color: white;
 }
-@media screen and(max-width:1057px) {
+@media screen and (max-width: 1440px) {
+  #hero {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media screen and(max-width:873px) {
+  section#footer-items {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    display: inline;
+  }
+}
+@media screen and (min-width: 531px) {
+  #hero {
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .menu_items {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 525px) {
+  #hero {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  header {
+    flex-wrap: wrap;
+    font-size: x-large;
+  }
+  .menu_items {
+    justify-content: center;
+  }
+  .image-container.text {
+    font-size: smaller;
+  }
+}
+@media screen and (max-width: 497px) {
+  #hero {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  #begin {
+    flex-wrap: wrap;
+    display: inline;
+  }
+  #bottom {
+    flex-wrap: wrap;
+    display: inline;
+  }
+  header {
+    flex-wrap: wrap;
+    font-size: xx-large;
+  }
+  .menu_items {
+    justify-content: center;
+  }
+  .image-container.text {
+    font-size: smaller;
+  }
+  .box4 {
+    display: inline;
+  }
+}
+@media screen and (max-width: 435px) {
+  #hero {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  #begin {
+    flex-wrap: wrap;
+    display: inline;
+  }
+  #bottom {
+    flex-wrap: wrap;
+    display: inline;
+  }
+  .box4 {
+    display: inline;
+    flex-wrap: wrap;
+  }
+  header {
+    flex-wrap: wrap;
+    font-size: xx-large;
+  }
+  .menu_items {
+    justify-content: center;
+    font-size: small;
+    text-align: center;
+  }
+  .image-container.text {
+    font-size: smaller;
+  }
+  .text hr {
+    width: 100%;
+  }
+  .rating {
+    display: inline;
+    flex-wrap: wrap;
+  }
+  section#footer-items {
+    display: inline;
+    flex-wrap: wrap;
+  }
+  #content {
+    display: inline;
+    justify-content: center;
+  }
+  .column {
+    display: inline;
+    flex-wrap: wrap;
+  }
+  .line {
+    font-size: smaller;
+  }
+  .sticker {
+    display: inline;
+    flex-wrap: wrap;
+  }
+}
+
+/*@media screen and(max-width:1057px) {
+  header {
+    font-size: 40px;
+  }
   .box5,
   .box6,
   .box7,
@@ -355,11 +486,14 @@ section#footer-items {
   .box10 {
     justify-content: center;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
   }
 }
 @media screen and (max-width: 1024px) {
+  header {
+    font-size: 7em;
+  }
   #hero {
     width: 100vw;
     height: 100%;
@@ -527,7 +661,7 @@ section#footer-items {
     width: 50%;
   }
   .line {
-    font-size: small;
+    font-size: ;
     justify-content: center;
   }
   .text {
@@ -559,3 +693,195 @@ section#footer-items {
     display: inline;
   }
 }
+/* background-color: yellow;
+  width: 100%;
+}
+
+#hero {
+  width: 100%;
+  background-image: url("https://img.freepik.com/premium-photo/italian-food-spaghetti-pasta-black-plate-dark-background_892776-24.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#begin {
+  display: inline-flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+h3 {
+  color: white;
+  text-align: left;
+  margin-left: 1em;
+}
+nav ul {
+  display: inline;
+  list-style: none;
+  text-align: right;
+  color: white;
+  margin-left: 50em;
+  align-items: end;
+}
+nav ul li {
+  display: inline-flex;
+  padding: 3px;
+}
+.box1 {
+  border: 1px solid white;
+  width: 4em;
+  text-align: center;
+  display: inline;
+  background-color: white;
+  color: black;
+}
+header {
+  font-size: 10rem;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  color: yellow;
+}
+#bottom {
+  display: inline-flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+p {
+  text-align: left;
+  padding: 1px;
+  margin-left: 40em;
+  color: white;
+  margin-bottom: 10px;
+}
+.box2 {
+  border: 1px solid white;
+  padding: 1px;
+  margin-bottom: 4px;
+  background-color: white;
+  margin-left: 1em;
+}
+.box3 {
+  border: 1px solid white;
+  padding: 1px;
+  color: white;
+  margin-left: 1em;
+}
+section#Menu {
+  background-color: black;
+  color: white;
+  padding: 1px;
+  margin-top: 5em;
+  margin-bottom: 10em;
+  border-radius: 15px;
+}
+.next {
+  display: inline-flex;
+  flex-direction: row;
+}
+.box4 {
+  text-align: center;
+  border: 1px solid yellow;
+  color: black;
+  background-color: yellow;
+  margin-left: 45em;
+  padding: 1px;
+  height: 20px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 3em;
+  padding: 5px;
+  margin-top: 1em;
+  margin-left: 35px;
+}
+h5 {
+  opacity: 0.7;
+  padding: 5px;
+  margin-left: 35px;
+}
+.menu_items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+.menu_items img {
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+}
+hr {
+  width: 100%;
+}
+.box5,
+.box6,
+.box7,
+.box8,
+.box9,
+.box10 {
+  width: 30%;
+  height: 40%;
+  padding: 20px;
+  margin: 17px;
+  border-radius: 15px;
+  background-color: black;
+  text-align: center;
+}
+
+.box div {
+  width: 100px;
+  height: 200px;
+  border-radius: 15px;
+  padding-bottom: 10px;
+}
+
+.box div img {
+  width: 90em;
+  height: 19em;
+  border-radius: 20em;
+}
+.rating {
+  display: inline-flex;
+  flex-direction: row;
+}
+h6 {
+  margin-top: 6px;
+  margin-left: 15em;
+}
+.star {
+  color: gray;
+  text-shadow: 0 0 0#ffd700;
+}
+@media screen and (max-width: 320px) {
+  section#hero {
+    width: 100%;
+  }
+  nav ul {
+    width: 100%;
+    margin-left: 35px;
+  }
+  header {
+    width: 50px;
+    text-align: center;
+  }
+  p {
+    margin-left: 40em;
+  }
+  section#menu {
+    width: 100%;
+  }
+  .box4 {
+    margin-left: 40em;
+  }
+  .rating {
+    text-align: center;
+  }
+  h6 {
+    margin-left: 30em;
+  }
+} */
