@@ -143,7 +143,14 @@ header {
 }
 .text hr {
   color: #000;
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
+  height: 1px;
+  border: 1px solid black;
+  display: flex;
+  text-align: center;
+  justify-self: center;
+  justify-content: center;
 }
 .line {
   font-size: larger;
@@ -203,7 +210,7 @@ h5 {
 }
 .menu_items img {
   width: 100%;
-  height: 50%;
+  height: 100%;
   border-radius: 10px;
   text-align: center;
   align-items: center;
@@ -251,6 +258,70 @@ hr {
   color: gray;
   text-shadow: 0 0 0#ffd700;
 }
+p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+section h5 {
+  text-align: center;
+}
+.circle {
+  margin-top: 5px;
+  justify-content: center;
+  transition: transform 0.3s;
+  padding: 20px;
+}
+.image2:hover {
+  transform: translateX(20px);
+  z-index: 1;
+  opacity: 0.8;
+  box-shadow: 0 0 10px (0, 0, 0, 0.5);
+}
+
+.image2 {
+  margin: -7px;
+  margin-top: 30px;
+  justify-content: center;
+  width: 70px;
+  shape-outside: circle;
+  border-radius: 70rem;
+  box-shadow: 1px 1px 10px grey;
+}
+section#outline h3 {
+  color: #000;
+  padding: 10px;
+}
+section#outline h6 {
+  padding: 10px;
+  opacity: 0.5;
+}
+.count {
+  display: flex;
+  justify-content: center;
+}
+.boxa,
+.boxb,
+.boxc,
+.boxd {
+  width: 60%;
+  height: 40%;
+  margin: 5px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.count div img {
+  width: 50%;
+  height: 40%;
+}
+.count h6 {
+  color: black;
+}
+.count h3 {
+  color: black;
+}
+
 span {
   margin: 0;
   padding: 0;
@@ -382,8 +453,24 @@ section#footer-items {
   .menu_items {
     justify-content: center;
   }
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .image-container.text {
     font-size: smaller;
+  }
+  .menu_items img {
+    width: 100%;
+    height: 100%;
+  }
+  .box5,
+  .box6,
+  .box7,
+  .box8,
+  .box9,
+  .box10 {
+    width: 70%;
   }
 }
 @media screen and (max-width: 497px) {
@@ -408,13 +495,14 @@ section#footer-items {
   .menu_items {
     justify-content: center;
   }
-  .image-container.text {
-    font-size: smaller;
-  }
-  .box4 {
-    display: inline;
-  }
 }
+.image-container.text {
+  font-size: smaller;
+}
+.box4 {
+  display: inline;
+}
+
 @media screen and (max-width: 435px) {
   #hero {
     width: 100%;
@@ -453,6 +541,16 @@ section#footer-items {
     display: inline;
     flex-wrap: wrap;
   }
+  .count {
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .circle {
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   section#footer-items {
     display: inline;
     flex-wrap: wrap;
@@ -471,6 +569,18 @@ section#footer-items {
   .sticker {
     display: inline;
     flex-wrap: wrap;
+  }
+  .menu_items img {
+    width: 100%;
+    height: 100%;
+  }
+  .box5,
+  .box6,
+  .box7,
+  .box8,
+  .box9,
+  .box10 {
+    width: 80%;
   }
 }
 
