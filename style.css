@@ -17,6 +17,7 @@ body {
   background-size: cover;
 }
 #begin {
+  padding: 20px;
   justify-content: space-between;
   margin: top;
   color: white;
