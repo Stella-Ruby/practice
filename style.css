@@ -531,12 +531,15 @@ section#footer-items {
     width: 60%;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .count div img {
     width: 60%;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    align-items: center;
   }
   .boxa,
   .boxb,
@@ -610,7 +613,28 @@ section#footer-items {
   .box4 {
     display: inline;
   }
-
+  .count {
+    width: 60%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .count div img {
+    width: 60%;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .boxa,
+  .boxb,
+  .boxc,
+  .boxd {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
   .circle {
     overflow-x: hidden;
     flex-wrap: nowrap;
@@ -629,7 +653,7 @@ section#footer-items {
     background-size: cover;
     background-position: center;
   }
-  /* #begin {
+  #begin {
     flex-wrap: wrap;
     display: inline;
   }
@@ -637,7 +661,8 @@ section#footer-items {
     flex-wrap: wrap;
     display: inline;
     text-align: left;
-  }*/
+  }
+
   .box4 {
     display: inline;
     flex-wrap: wrap;
@@ -660,16 +685,18 @@ section#footer-items {
     flex-wrap: wrap;
   }
   .count {
-    display: inline;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .count div img {
-    display: flex;
+    width: 60%;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  .count div img {
+    width: 60%;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
   .boxa,
   .boxb,
@@ -679,6 +706,7 @@ section#footer-items {
     align-items: center;
     text-align: center;
   }
+
   .circle {
     overflow-x: hidden;
     flex-wrap: nowrap;
