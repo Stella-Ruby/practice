@@ -548,6 +548,13 @@ section#footer-items {
   .box10 {
     width: 70%;
   }
+
+  .circle {
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 497px) {
   #hero {
@@ -577,6 +584,13 @@ section#footer-items {
 }
 .box4 {
   display: inline;
+}
+
+.circle {
+  overflow-x: hidden;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  justify-content: center;
 }
 
 @media screen and (max-width: 435px) {
@@ -627,9 +641,9 @@ section#footer-items {
     text-align: center;
   }
   .circle {
-    overflow: hidden;
+    overflow-x: hidden;
+    flex-wrap: nowrap;
     white-space: nowrap;
-    display: inline;
     justify-content: center;
   }
   section#footer-items {
