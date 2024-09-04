@@ -627,6 +627,8 @@ section#footer-items {
     text-align: center;
   }
   .circle {
+    overflow: hidden;
+    white-space: nowrap;
     display: inline;
     flex-wrap: wrap;
     justify-content: center;
