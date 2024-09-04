@@ -534,7 +534,6 @@ section#footer-items {
   }
   .count div img {
     width: 60%;
-    display: inline;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
@@ -545,6 +544,7 @@ section#footer-items {
   .boxd {
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   .image-container {
     display: flex;
@@ -667,6 +667,14 @@ section#footer-items {
   .count div img {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .boxa,
+  .boxb,
+  .boxc,
+  .boxd {
     justify-content: center;
     align-items: center;
     text-align: center;
