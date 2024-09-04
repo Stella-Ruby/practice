@@ -630,7 +630,6 @@ section#footer-items {
     overflow: hidden;
     white-space: nowrap;
     display: inline;
-    flex-wrap: wrap;
     justify-content: center;
   }
   section#footer-items {
