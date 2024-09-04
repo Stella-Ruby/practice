@@ -501,6 +501,17 @@ section#footer-items {
   .menu_items {
     justify-content: center;
   }
+  .count {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .icons {
+    display: inline;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 525px) {
   #hero {
@@ -518,7 +529,6 @@ section#footer-items {
   }
   .count {
     width: 60%;
-    display: inline;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -533,8 +543,9 @@ section#footer-items {
     display: flex;
     flex-wrap: wrap;
   }
-  .image-container.text {
-    font-size: smaller;
+  .text p {
+    font-size: small;
+    padding: 2px;
   }
   .menu_items img {
     width: 100%;
@@ -554,6 +565,10 @@ section#footer-items {
     flex-wrap: nowrap;
     white-space: nowrap;
     justify-content: center;
+  }
+  .icons {
+    display: inline;
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 497px) {
@@ -578,21 +593,25 @@ section#footer-items {
   .menu_items {
     justify-content: center;
   }
-}
-.image-container.text {
-  font-size: smaller;
-}
-.box4 {
-  display: inline;
-}
+  .text p {
+    font-size: small;
+    padding: 2px;
+  }
+  .box4 {
+    display: inline;
+  }
 
-.circle {
-  overflow-x: hidden;
-  flex-wrap: nowrap;
-  white-space: nowrap;
-  justify-content: center;
+  .circle {
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    justify-content: center;
+  }
+  .icons {
+    display: inline;
+    flex-wrap: wrap;
+  }
 }
-
 @media screen and (max-width: 435px) {
   #hero {
     width: 100%;
@@ -621,8 +640,9 @@ section#footer-items {
     font-size: small;
     text-align: center;
   }
-  .image-container.text {
-    font-size: smaller;
+  .text p {
+    font-size: small;
+    padding: 2px;
   }
   .rating {
     display: inline;
@@ -634,7 +654,7 @@ section#footer-items {
     justify-content: center;
   }
   .count div img {
-    display: inline;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -676,6 +696,10 @@ section#footer-items {
   .box9,
   .box10 {
     width: 80%;
+  }
+  .sticker p {
+    display: inline;
+    flex-wrap: wrap;
   }
 }
 
