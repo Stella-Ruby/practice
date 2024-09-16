@@ -11,7 +11,7 @@ body {
   background-color: #fff700;
   width: 100%;
 }
-#hero {
+section#hero {
   width: 100%;
   height: 100%;
   background-image: url("https://images.unsplash.com/photo-1505682750263-f3f9e519c565?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
@@ -73,7 +73,7 @@ header {
 }
 #bottom {
   text-align: left;
-  padding: 20px;
+  padding: 0 100px;
   color: white;
   justify-content: space-between;
   display: flex;
@@ -368,34 +368,25 @@ section#outline h6 {
   margin: 3px;
 }
 
-.count {
-  width: 60%;
-  flex-wrap: wrap;
+div .count {
+  width: 100%;
+  height: 70%;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
-.count div img {
-  width: 60%;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+div.count img {
+  width: 40%;
+  height: 40%;
 }
-
-.count h6 {
+div .count p {
   color: black;
   text-align: left;
+  justify-content: center;
+  padding: 4px;
 }
-.count h3 {
+div .count h3 {
   color: black;
-}
-
-span {
-  margin: 0;
-  padding: 0;
-  display: inline;
 }
 footer {
   list-style: none;
@@ -416,6 +407,7 @@ section#footer-items {
 
 .footer-contents h3 {
   font-size: 50px;
+  color: white;
 }
 
 .box19 {
@@ -509,18 +501,6 @@ section#footer-items {
   }
 }
 @media screen and(max-width:873px) {
-  .checkbtn {
-    display: block;
-  }
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: yellow;
-    top: 80px;
-    left: 0;
-    text-align: center;
-  }
   section#footer-items {
     justify-content: center;
     text-align: center;
@@ -549,7 +529,37 @@ section#footer-items {
     justify-content: center;
   }
 }
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 816px) {
+  .checkbtn {
+    display: block;
+    color: black;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: yellow;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #000;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
   #hero {
     width: 100%;
     height: 100%;
@@ -563,19 +573,11 @@ section#footer-items {
   .menu_items {
     justify-content: center;
   }
-  .count {
-    width: 60%;
-    flex-wrap: wrap;
+  div.count {
+    width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-  .count div img {
-    width: 60%;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
   }
 
   .image-container {
@@ -642,19 +644,11 @@ section#footer-items {
   .box4 {
     display: inline;
   }
-  .count {
-    width: 60%;
-    flex-wrap: wrap;
+  div.count {
+    width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-  .count div img {
-    width: 60%;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
   }
 
   .circle {
@@ -706,19 +700,11 @@ section#footer-items {
     display: inline;
     flex-wrap: wrap;
   }
-  .count {
-    width: 60%;
-    flex-wrap: wrap;
+  div.count {
+    width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-  .count div img {
-    width: 60%;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
   }
 
   .circle {
