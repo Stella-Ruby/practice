@@ -106,7 +106,6 @@ header {
 }
 .image-container {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   perspective: 1000px;
   position: relative;
@@ -515,6 +514,13 @@ section#footer-items {
     background-size: cover;
     background-position: center;
   }
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
   .menu_items {
     justify-content: center;
   }
@@ -532,12 +538,12 @@ section#footer-items {
 @media screen and (max-width: 816px) {
   .checkbtn {
     display: block;
-    color: black;
+    color: white;
   }
   ul {
-    position: fixed;
+    position: relative;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     background: yellow;
     top: 80px;
     left: -100%;
@@ -546,11 +552,12 @@ section#footer-items {
   }
   nav ul li {
     display: block;
-    margin: 50px 0;
+    margin: 30px 0;
     line-height: 30px;
   }
   nav ul li a {
     font-size: 20px;
+    color: black;
   }
   a:hover,
   a.active {
@@ -566,9 +573,12 @@ section#footer-items {
     background-size: cover;
     background-position: center;
   }
+  label.logo {
+    font-size: 20px;
+    padding-left: 20px;
+  }
   header {
-    flex-wrap: wrap;
-    font-size: x-large;
+    font-size: 50px;
   }
   .menu_items {
     justify-content: center;
@@ -581,8 +591,6 @@ section#footer-items {
   }
 
   .image-container {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -622,17 +630,17 @@ section#footer-items {
     background-size: cover;
     background-position: center;
   }
-  #begin {
-    flex-wrap: wrap;
-    display: inline;
-  }
   #bottom {
-    flex-wrap: wrap;
+    padding: 20px;
     display: inline;
   }
   header {
     flex-wrap: wrap;
     font-size: xx-large;
+  }
+  .image-container {
+    width: 100%;
+    height: 60%;
   }
   .menu_items {
     justify-content: center;
@@ -669,12 +677,43 @@ section#footer-items {
     background-size: cover;
     background-position: center;
   }
-  #begin {
-    flex-wrap: wrap;
-    display: inline;
+  .checkbtn {
+    display: block;
+    color: white;
+  }
+  ul {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: yellow;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    color: black;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #000;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  label.logo {
+    font-size: 20px;
+    padding-left: 20px;
   }
   #bottom {
-    flex-wrap: wrap;
+    padding-left: 20px;
     display: inline;
     text-align: left;
   }
@@ -686,6 +725,130 @@ section#footer-items {
   header {
     flex-wrap: wrap;
     font-size: xx-large;
+  }
+  .image-container {
+    width: 100%;
+  }
+  .menu_items {
+    justify-content: center;
+    font-size: small;
+    text-align: center;
+  }
+  .text p {
+    font-size: small;
+    padding: 2px;
+  }
+  .rating {
+    display: inline;
+    flex-wrap: wrap;
+  }
+  div.count {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .circle {
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    justify-content: center;
+  }
+  section#footer-items {
+    display: inline;
+    flex-wrap: wrap;
+  }
+  #content {
+    display: inline;
+    justify-content: center;
+  }
+  .column {
+    display: inline;
+    flex-wrap: wrap;
+  }
+  .line {
+    font-size: smaller;
+  }
+  .sticker {
+    display: inline;
+    flex-wrap: wrap;
+  }
+  .menu_items img {
+    width: 100%;
+    height: 100%;
+  }
+  .box5,
+  .box6,
+  .box7,
+  .box8,
+  .box9,
+  .box10 {
+    width: 80%;
+  }
+  .sticker p {
+    display: inline;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 320px) {
+  #hero {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .checkbtn {
+    display: block;
+    color: white;
+  }
+  ul {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: yellow;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    color: black;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #000;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  #bottom {
+    padding-left: 20px;
+    display: inline;
+    text-align: left;
+  }
+  label.logo {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+  .box4 {
+    display: inline;
+    flex-wrap: wrap;
+  }
+  header {
+    flex-wrap: wrap;
+    font-size: xx-large;
+  }
+  .image-container {
+    width: 100%;
   }
   .menu_items {
     justify-content: center;
