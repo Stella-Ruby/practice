@@ -546,7 +546,7 @@ section#footer-items {
     height: 50vh;
     background: yellow;
     top: 80px;
-    left: 100%;
+    left: -100%;
     text-align: center;
     transition: all 0.5s;
   }
@@ -556,7 +556,7 @@ section#footer-items {
     line-height: 30px;
   }
   nav ul li a {
-    font-size: 20px;
+    font-size: 50px;
     color: black;
   }
   a:hover,
@@ -591,6 +591,8 @@ section#footer-items {
   }
 
   .image-container {
+    width: 100%;
+    height: 60%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
