@@ -331,6 +331,9 @@ section#outline h6 {
   padding: 10px;
   opacity: 0.5;
 }
+section#outline p {
+  font-size: small;
+}
 .direction {
   justify-content: space-between;
   display: flex;
