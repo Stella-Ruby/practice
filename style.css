@@ -19,7 +19,7 @@ section#hero {
   background-size: cover;
 }
 nav {
-  height: 80px;
+  height: 40px;
   width: 100%;
 }
 label.logo {
@@ -35,7 +35,7 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
-  line-height: 80px;
+  line-height: 20px;
   margin: 0 5px;
 }
 nav ul li a {
@@ -69,7 +69,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   color: yellow;
-  margin: 10%;
+  margin: 10px;
 }
 #bottom {
   text-align: left;
@@ -355,6 +355,8 @@ section#outline p {
   background-color: white;
   color: #000;
   padding: 3px;
+  padding-top: -10px;
+  padding-bottom: -10px;
   margin: 3px;
   cursor: pointer;
   font-size: x-large;
@@ -367,6 +369,8 @@ section#outline p {
   font-size: 24px;
   cursor: pointer;
   padding: 3px;
+  padding-top: -10px;
+  padding-bottom: -10px;
   margin: 3px;
 }
 
@@ -546,7 +550,7 @@ section#footer-items {
   ul {
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: 90vh;
     background: yellow;
     top: 80px;
     left: -100%;
@@ -555,11 +559,11 @@ section#footer-items {
   }
   nav ul li {
     display: block;
-    margin: 30px 0;
+    margin: 50px 0;
     line-height: 30px;
   }
   nav ul li a {
-    font-size: 50px;
+    font-size: 20px;
     color: black;
   }
   a:hover,
@@ -581,7 +585,7 @@ section#footer-items {
     padding-left: 20px;
   }
   header {
-    font-size: 50px;
+    font-size: 70px;
   }
   #bottom {
     padding: 20px;
@@ -646,7 +650,7 @@ section#footer-items {
     padding-left: 20px;
   }
   header {
-    font-size: 50px;
+    font-size: 70px;
   }
   #bottom {
     padding: 20px;
@@ -711,8 +715,9 @@ section#footer-items {
     display: inline;
   }
   header {
-    flex-wrap: wrap;
-    font-size: xx-large;
+    font-size: 70px;
+    text-align: center;
+    justify-content: center;
   }
   .image-container {
     width: 100%;
@@ -760,7 +765,7 @@ section#footer-items {
   ul {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background: yellow;
     top: 80px;
     left: -100%;
@@ -799,8 +804,7 @@ section#footer-items {
     flex-wrap: wrap;
   }
   header {
-    flex-wrap: wrap;
-    font-size: xx-large;
+    font-size: 70px;
   }
   .image-container {
     width: 100%;
@@ -881,7 +885,7 @@ section#footer-items {
   ul {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background: yellow;
     top: 80px;
     left: -100%;
@@ -920,8 +924,7 @@ section#footer-items {
     flex-wrap: wrap;
   }
   header {
-    flex-wrap: wrap;
-    font-size: xx-large;
+    font-size: 70px;
   }
   .image-container {
     width: 100%;
